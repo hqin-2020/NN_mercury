@@ -132,10 +132,10 @@ kernel_initializer = 'glorot_normal'
 
 BFGS_maxiter  = 50
 BFGS_maxfun   = 50000
-BFGS_gtol     = 1.0 * np.finfo(float).eps
+BFGS_gtol     = 1e-6#1.0 * np.finfo(float).eps
 BFGS_maxcor   = 100
 BFGS_maxls    = 100
-BFGS_ftol     = 1.0 * np.finfo(float).eps
+BFGS_ftol     = 1e-6#1.0 * np.finfo(float).eps
 
 ## NN structure
 tf.keras.backend.set_floatx("float64") ## Use float64 by default
